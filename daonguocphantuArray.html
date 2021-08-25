@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 1, 4, 2, 11];
+    // x.reverse();
+    // alert(x)
+    let first = 0; //duyet phan tu dau tien trong array
+    let last = x.length - 1 //duyet phan tu cuoi trong mang
+    while (first < last) {
+        //trong quá trình lặp đổi chỗ phần tử đầu tiên và cuối cùng cho nhau.
+        // Sau đó tăng biến first lên 1 để duyệt phần tử tiếp theo,
+        // giảm last đi một.
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+    document.write(x);
+</script>
+</body>
+</html>
